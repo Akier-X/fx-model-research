@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Model Validation](https://github.com/Akier-X/fx-model-research/actions/workflows/model-validation.yml/badge.svg)](https://github.com/Akier-X/fx-model-research/actions/workflows/model-validation.yml)
 [![最高精度](https://img.shields.io/badge/Best%20Accuracy-93.64%25-brightgreen)](https://github.com/Akier-X/fx-model-research)
 
 ---
