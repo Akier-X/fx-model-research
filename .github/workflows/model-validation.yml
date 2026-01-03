@@ -104,3 +104,35 @@ jobs:
       with:
         name: research-summary
         path: research_summary.md
+
+    - name: Install evaluation dependencies
+      run: |
+        pip install matplotlib numpy
+
+    - name: Generate comprehensive evaluation
+      run: |
+        python .github/scripts/generate_evaluation.py
+
+    - name: Upload evaluation graphs (Phase Evolution)
+      uses: actions/upload-artifact@v3
+      with:
+        name: phase-evolution-graphs
+        path: evaluation_output/phase_evolution.png
+
+    - name: Upload evaluation graphs (Innovation Analysis)
+      uses: actions/upload-artifact@v3
+      with:
+        name: innovation-analysis-graphs
+        path: evaluation_output/innovation_analysis.png
+
+    - name: Upload evaluation summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: research-evaluation-summary
+        path: evaluation_output/research_summary.json
+
+    - name: Upload evaluation report
+      uses: actions/upload-artifact@v3
+      with:
+        name: research-evaluation-report
+        path: evaluation_output/RESEARCH_EVALUATION_REPORT.md
